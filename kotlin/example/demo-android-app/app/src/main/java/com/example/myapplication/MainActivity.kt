@@ -9,9 +9,9 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat.OnRequestPermissionsResultCallback
-import io.mosip.tuvali.common.events.SecureChannelEstablishedEvent
-import io.mosip.tuvali.verifier.Verifier
-import io.mosip.tuvali.wallet.Wallet
+import foundation.openwallet.tuvali.common.events.SecureChannelEstablishedEvent
+import foundation.openwallet.tuvali.verifier.Verifier
+import foundation.openwallet.tuvali.wallet.Wallet
 
 
 class MainActivity : AppCompatActivity(), OnRequestPermissionsResultCallback {

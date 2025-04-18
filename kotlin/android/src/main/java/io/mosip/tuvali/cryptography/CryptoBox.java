@@ -1,4 +1,4 @@
-package io.mosip.tuvali.cryptography;
+package foundation.openwallet.tuvali.cryptography;
 
 interface CryptoBox {
     int NONCE_LENGTH = 12;

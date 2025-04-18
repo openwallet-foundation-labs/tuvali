@@ -1,4 +1,4 @@
-package io.mosip.tuvali.cryptography;
+package foundation.openwallet.tuvali.cryptography;
 
 public class CipherPackage {
     private CipherBox self;

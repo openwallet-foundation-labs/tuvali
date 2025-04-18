@@ -1,4 +1,4 @@
-package io.mosip.tuvali.common.advertisementPayload
+package foundation.openwallet.tuvali.common.advertisementPayload
 
 import org.bouncycastle.util.encoders.Hex
 

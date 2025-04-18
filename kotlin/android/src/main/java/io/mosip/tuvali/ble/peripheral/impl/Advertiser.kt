@@ -1,4 +1,4 @@
-package io.mosip.tuvali.ble.peripheral.impl
+package foundation.openwallet.tuvali.ble.peripheral.impl
 
 import android.annotation.SuppressLint
 import android.bluetooth.BluetoothManager

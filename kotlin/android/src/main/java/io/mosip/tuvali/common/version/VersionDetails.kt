@@ -1,4 +1,4 @@
-package io.mosip.tuvali.common.version
+package foundation.openwallet.tuvali.common.version
 
 class VersionDetails {
   companion object {

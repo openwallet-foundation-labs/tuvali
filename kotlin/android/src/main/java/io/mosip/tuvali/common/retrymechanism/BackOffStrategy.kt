@@ -1,4 +1,4 @@
-package io.mosip.tuvali.common.retrymechanism
+package foundation.openwallet.tuvali.common.retrymechanism
 
 import kotlin.math.min
 import kotlin.math.pow

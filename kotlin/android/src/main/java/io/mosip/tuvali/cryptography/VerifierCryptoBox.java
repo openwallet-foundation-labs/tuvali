@@ -1,4 +1,4 @@
-package io.mosip.tuvali.cryptography;
+package foundation.openwallet.tuvali.cryptography;
 
 public interface VerifierCryptoBox {
     byte[] publicKey();

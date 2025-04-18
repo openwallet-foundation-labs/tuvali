@@ -1,6 +1,6 @@
-package io.mosip.tuvali.common.safeExecute
+package foundation.openwallet.tuvali.common.safeExecute
 
-import io.mosip.tuvali.exception.handlers.ExceptionHandler
+import foundation.openwallet.tuvali.exception.handlers.ExceptionHandler
 
 class TryExecuteSync(private val bleExceptionHandler: ExceptionHandler) {
   private val mutex = Object()

@@ -1,6 +1,6 @@
-package io.mosip.tuvali.wallet
+package foundation.openwallet.tuvali.wallet
 
-import io.mosip.tuvali.common.events.Event
+import foundation.openwallet.tuvali.common.events.Event
 
 interface IWallet {
   fun startConnection(uri: String)

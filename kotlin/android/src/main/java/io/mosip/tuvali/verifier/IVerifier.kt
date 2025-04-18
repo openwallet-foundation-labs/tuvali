@@ -1,6 +1,6 @@
-package io.mosip.tuvali.verifier
+package foundation.openwallet.tuvali.verifier
 
-import io.mosip.tuvali.common.events.Event
+import foundation.openwallet.tuvali.common.events.Event
 
 interface IVerifier {
   fun startAdvertisement(advIdentifier: String): String

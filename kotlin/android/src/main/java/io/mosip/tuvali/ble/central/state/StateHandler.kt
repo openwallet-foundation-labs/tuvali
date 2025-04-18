@@ -1,15 +1,15 @@
-package io.mosip.tuvali.ble.central.state
+package foundation.openwallet.tuvali.ble.central.state
 
 import android.annotation.SuppressLint
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
 import android.util.Log
-import io.mosip.tuvali.ble.central.impl.Controller
-import io.mosip.tuvali.ble.central.ICentralListener
-import io.mosip.tuvali.ble.central.state.message.*
-import io.mosip.tuvali.ble.exception.CentralStateHandlerException
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.ble.central.impl.Controller
+import foundation.openwallet.tuvali.ble.central.ICentralListener
+import foundation.openwallet.tuvali.ble.central.state.message.*
+import foundation.openwallet.tuvali.ble.exception.CentralStateHandlerException
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
 import org.bouncycastle.util.encoders.Hex
 
 class StateHandler(

@@ -1,6 +1,6 @@
-package io.mosip.tuvali.wallet.transfer
+package foundation.openwallet.tuvali.wallet.transfer
 
-import io.mosip.tuvali.exception.BLEException
+import foundation.openwallet.tuvali.exception.BLEException
 
 interface ITransferListener {
   fun onResponseSent()

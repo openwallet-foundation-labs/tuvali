@@ -1,4 +1,4 @@
-package io.mosip.tuvali.verifier
+package foundation.openwallet.tuvali.verifier
 
 import android.bluetooth.BluetoothGattCharacteristic
 import android.bluetooth.BluetoothGattService

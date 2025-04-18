@@ -1,3 +1,3 @@
-package io.mosip.tuvali.common.events
+package foundation.openwallet.tuvali.common.events
 
 class DisconnectedEvent: Event

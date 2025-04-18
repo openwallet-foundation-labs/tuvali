@@ -1,4 +1,4 @@
-package io.mosip.tuvali.ble.central.impl
+package foundation.openwallet.tuvali.ble.central.impl
 
 import android.annotation.SuppressLint
 import android.bluetooth.*
@@ -6,7 +6,7 @@ import android.bluetooth.BluetoothGatt.*
 import android.content.Context
 import android.util.Log
 import java.util.*
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
 import kotlin.math.min
 
 //Set maximum attribute value as defined by spec Core 5.3

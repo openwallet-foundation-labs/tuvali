@@ -1,4 +1,4 @@
-package io.mosip.tuvali.ble.central.impl
+package foundation.openwallet.tuvali.ble.central.impl
 
 import android.annotation.SuppressLint
 import android.bluetooth.BluetoothManager
@@ -7,7 +7,7 @@ import android.content.Context
 import android.os.ParcelUuid
 import android.util.Log
 import java.util.*
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
 
 class Scanner(context: Context) {
   private val logTag =  getLogTag(javaClass.simpleName)

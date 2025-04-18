@@ -1,4 +1,4 @@
-package io.mosip.tuvali.common.events
+package foundation.openwallet.tuvali.common.events
 
 data class VerificationStatusEvent(val status: VerificationStatus): Event {
 

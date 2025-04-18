@@ -1,7 +1,7 @@
-package io.mosip.tuvali.transfer
+package foundation.openwallet.tuvali.transfer
 
 import android.util.Log
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
 
 class RetryChunker(private val chunker: Chunker, private val missedSequences: IntArray) {
   private val logTag = getLogTag(javaClass.simpleName)

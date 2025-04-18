@@ -1,6 +1,6 @@
-package io.mosip.tuvali.ble.central.state
+package foundation.openwallet.tuvali.ble.central.state
 
-import io.mosip.tuvali.ble.central.state.message.IMessage
+import foundation.openwallet.tuvali.ble.central.state.message.IMessage
 
 interface IMessageSender {
   fun sendMessage(msg: IMessage)

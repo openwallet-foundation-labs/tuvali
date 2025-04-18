@@ -1,17 +1,17 @@
-package io.mosip.tuvali.verifier.transfer
+package foundation.openwallet.tuvali.verifier.transfer
 
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
 import android.util.Log
-import io.mosip.tuvali.ble.peripheral.Peripheral
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
-import io.mosip.tuvali.transfer.*
-import io.mosip.tuvali.verifier.GattService
-import io.mosip.tuvali.verifier.exception.CorruptedChunkReceivedException
-import io.mosip.tuvali.verifier.exception.TooManyFailureChunksException
-import io.mosip.tuvali.verifier.exception.VerifierTransferHandlerException
-import io.mosip.tuvali.verifier.transfer.message.*
+import foundation.openwallet.tuvali.ble.peripheral.Peripheral
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.transfer.*
+import foundation.openwallet.tuvali.verifier.GattService
+import foundation.openwallet.tuvali.verifier.exception.CorruptedChunkReceivedException
+import foundation.openwallet.tuvali.verifier.exception.TooManyFailureChunksException
+import foundation.openwallet.tuvali.verifier.exception.VerifierTransferHandlerException
+import foundation.openwallet.tuvali.verifier.transfer.message.*
 import java.util.*
 
 class TransferHandler(looper: Looper, private val peripheral: Peripheral, private val transferListener: ITransferListener, val serviceUUID: UUID) : Handler(looper) {

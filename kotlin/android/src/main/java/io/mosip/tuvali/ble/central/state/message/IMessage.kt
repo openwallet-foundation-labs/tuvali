@@ -1,4 +1,4 @@
-package io.mosip.tuvali.ble.central.state.message
+package foundation.openwallet.tuvali.ble.central.state.message
 
 abstract class IMessage(val commandType: CentralStates) {
   enum class CentralStates {

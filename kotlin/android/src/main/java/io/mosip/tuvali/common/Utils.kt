@@ -1,4 +1,4 @@
-package io.mosip.tuvali.common
+package foundation.openwallet.tuvali.common
 
 import java.nio.ByteBuffer
 

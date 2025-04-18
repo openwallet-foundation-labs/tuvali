@@ -1,4 +1,4 @@
-package io.mosip.tuvali.ble.central.impl
+package foundation.openwallet.tuvali.ble.central.impl
 
 import android.annotation.SuppressLint
 import android.bluetooth.BluetoothDevice
@@ -6,10 +6,10 @@ import android.bluetooth.BluetoothGatt
 import android.bluetooth.le.ScanResult
 import android.content.Context
 import android.util.Log
-import io.mosip.tuvali.ble.central.state.IMessageSender
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
-import io.mosip.tuvali.ble.central.state.message.*
-import io.mosip.tuvali.transfer.Util
+import foundation.openwallet.tuvali.ble.central.state.IMessageSender
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.ble.central.state.message.*
+import foundation.openwallet.tuvali.transfer.Util
 import java.util.UUID
 
 const val MTU_HEADER_SIZE = 3

@@ -1,8 +1,8 @@
-package io.mosip.tuvali.transfer
+package foundation.openwallet.tuvali.transfer
 
 import android.util.Log
-import io.mosip.tuvali.transfer.ByteCount.TwoBytes
-import io.mosip.tuvali.transfer.Util.Companion.networkOrderedByteArrayToInt
+import foundation.openwallet.tuvali.transfer.ByteCount.TwoBytes
+import foundation.openwallet.tuvali.transfer.Util.Companion.networkOrderedByteArrayToInt
 import kotlin.math.ceil
 import kotlin.math.min
 

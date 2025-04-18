@@ -1,18 +1,18 @@
-package io.mosip.tuvali.wallet.transfer
+package foundation.openwallet.tuvali.wallet.transfer
 
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
 import android.util.Log
-import io.mosip.tuvali.ble.central.Central
+import foundation.openwallet.tuvali.ble.central.Central
 
-import io.mosip.tuvali.transfer.*
-import io.mosip.tuvali.transfer.ByteCount.FourBytes
-import io.mosip.tuvali.verifier.GattService
-import io.mosip.tuvali.wallet.transfer.message.*
+import foundation.openwallet.tuvali.transfer.*
+import foundation.openwallet.tuvali.transfer.ByteCount.FourBytes
+import foundation.openwallet.tuvali.verifier.GattService
+import foundation.openwallet.tuvali.wallet.transfer.message.*
 import java.util.*
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
-import io.mosip.tuvali.wallet.exception.WalletTransferHandlerException
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.wallet.exception.WalletTransferHandlerException
 
 const val MAX_FAILURE_FRAME_RETRY_LIMIT = 15
 

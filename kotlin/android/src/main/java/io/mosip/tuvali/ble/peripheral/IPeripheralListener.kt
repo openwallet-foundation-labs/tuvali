@@ -1,6 +1,6 @@
-package io.mosip.tuvali.ble.peripheral
+package foundation.openwallet.tuvali.ble.peripheral
 
-import io.mosip.tuvali.exception.BLEException
+import foundation.openwallet.tuvali.exception.BLEException
 import java.util.UUID
 
 interface IPeripheralListener {

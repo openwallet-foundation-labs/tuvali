@@ -1,4 +1,4 @@
-package io.mosip.tuvali.transfer
+package foundation.openwallet.tuvali.transfer
 
 import kotlin.math.ceil
 

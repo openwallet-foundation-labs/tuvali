@@ -1,8 +1,8 @@
-package io.mosip.tuvali.transfer
+package foundation.openwallet.tuvali.transfer
 
 import android.util.Log
 import com.github.snksoft.crc.CRC
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
 
 
 object CheckValue {

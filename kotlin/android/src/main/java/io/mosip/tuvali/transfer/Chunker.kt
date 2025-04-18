@@ -1,9 +1,9 @@
-package io.mosip.tuvali.transfer
+package foundation.openwallet.tuvali.transfer
 
 import android.util.Log
-import io.mosip.tuvali.transfer.ByteCount.TwoBytes
-import io.mosip.tuvali.transfer.Util.Companion.intToNetworkOrderedByteArray
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.transfer.ByteCount.TwoBytes
+import foundation.openwallet.tuvali.transfer.Util.Companion.intToNetworkOrderedByteArray
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
 
 class Chunker(private val data: ByteArray, private val maxDataBytes: Int) :
   ChunkerBase(maxDataBytes) {

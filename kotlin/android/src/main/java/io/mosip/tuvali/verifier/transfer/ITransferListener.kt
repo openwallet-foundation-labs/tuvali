@@ -1,6 +1,6 @@
-package io.mosip.tuvali.verifier.transfer
+package foundation.openwallet.tuvali.verifier.transfer
 
-import io.mosip.tuvali.exception.BLEException
+import foundation.openwallet.tuvali.exception.BLEException
 import java.util.UUID
 
 interface ITransferListener {

@@ -1,4 +1,4 @@
-package io.mosip.tuvali.verifier.transfer.message
+package foundation.openwallet.tuvali.verifier.transfer.message
 
 class ResponseTransferCompleteMessage(
   val data: ByteArray,

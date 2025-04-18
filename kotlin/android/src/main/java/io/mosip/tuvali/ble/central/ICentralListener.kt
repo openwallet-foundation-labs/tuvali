@@ -1,8 +1,8 @@
-package io.mosip.tuvali.ble.central
+package foundation.openwallet.tuvali.ble.central
 
 import android.bluetooth.BluetoothDevice
 import android.bluetooth.le.ScanRecord
-import io.mosip.tuvali.exception.BLEException
+import foundation.openwallet.tuvali.exception.BLEException
 import java.util.*
 
 interface ICentralListener {

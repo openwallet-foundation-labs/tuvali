@@ -1,4 +1,4 @@
-package io.mosip.tuvali.common.uri
+package foundation.openwallet.tuvali.common.uri
 
 import android.net.Uri
 import android.text.TextUtils.isEmpty

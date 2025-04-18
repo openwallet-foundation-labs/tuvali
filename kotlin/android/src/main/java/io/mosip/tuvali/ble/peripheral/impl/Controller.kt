@@ -1,11 +1,11 @@
-package io.mosip.tuvali.ble.peripheral.impl
+package foundation.openwallet.tuvali.ble.peripheral.impl
 
 import android.bluetooth.BluetoothGattCharacteristic
 import android.content.Context
 import android.util.Log
-import io.mosip.tuvali.ble.peripheral.state.IMessageSender
-import io.mosip.tuvali.ble.peripheral.state.message.*
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.ble.peripheral.state.IMessageSender
+import foundation.openwallet.tuvali.ble.peripheral.state.message.*
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
 
 const val MTU_HEADER_SIZE = 3
 

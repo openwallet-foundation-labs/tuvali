@@ -1,4 +1,4 @@
-package io.mosip.tuvali.ble.peripheral.state.message
+package foundation.openwallet.tuvali.ble.peripheral.state.message
 
 abstract class IMessage(val messageType: PeripheralMessageTypes) {
   enum class PeripheralMessageTypes {

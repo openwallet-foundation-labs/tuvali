@@ -33,7 +33,7 @@ publishing {
             appendNode('id', 'Your developer ID')
             appendNode('name', 'Mosip')
             appendNode('email', 'mosip.emailnotifier@gmail.com')
-            appendNode('organization', 'io.mosip')
+            appendNode('organization', 'foundation.openwallet')
             appendNode('organizationUrl', 'https://github.com/mosip/tuvali')
           }
 
@@ -80,7 +80,7 @@ publishing {
           gpgArgumentsNode.appendNode('arg', 'loopback')
         }
       }
-      groupId = "io.mosip"
+      groupId = "foundation.openwallet"
       artifactId = "tuvali"
       version = "0.5.0"
       if (project.gradle.startParameter.taskNames.any { it.contains('assembleRelease') }) {

@@ -1,33 +1,33 @@
-package io.mosip.tuvali.verifier
+package foundation.openwallet.tuvali.verifier
 
 import android.content.Context
 import android.os.HandlerThread
 import android.os.Process.THREAD_PRIORITY_DEFAULT
 import android.util.Log
-import io.mosip.tuvali.ble.peripheral.IPeripheralListener
-import io.mosip.tuvali.ble.peripheral.Peripheral
-import io.mosip.tuvali.common.Utils
-import io.mosip.tuvali.common.advertisementPayload.AdvertisementPayload
-import io.mosip.tuvali.common.events.EventEmitter
-import io.mosip.tuvali.cryptography.SecretsTranslator
-import io.mosip.tuvali.cryptography.VerifierCryptoBox
-import io.mosip.tuvali.cryptography.VerifierCryptoBoxBuilder
-import io.mosip.tuvali.exception.BLEException
-import io.mosip.tuvali.common.events.DataReceivedEvent
-import io.mosip.tuvali.common.events.ConnectedEvent
-import io.mosip.tuvali.common.events.DisconnectedEvent
-import io.mosip.tuvali.common.events.SecureChannelEstablishedEvent
-import io.mosip.tuvali.transfer.ByteCount.FourBytes
-import io.mosip.tuvali.transfer.TransferReportRequest
-import io.mosip.tuvali.transfer.Util
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
-import io.mosip.tuvali.verifier.exception.UnsupportedMTUSizeException
-import io.mosip.tuvali.verifier.exception.VerifierException
-import io.mosip.tuvali.verifier.transfer.ITransferListener
-import io.mosip.tuvali.verifier.transfer.TransferHandler
-import io.mosip.tuvali.verifier.transfer.message.RemoteRequestedTransferReportMessage
-import io.mosip.tuvali.verifier.transfer.message.ResponseChunkReceivedMessage
-import io.mosip.tuvali.verifier.transfer.message.ResponseSizeReadSuccessMessage
+import foundation.openwallet.tuvali.ble.peripheral.IPeripheralListener
+import foundation.openwallet.tuvali.ble.peripheral.Peripheral
+import foundation.openwallet.tuvali.common.Utils
+import foundation.openwallet.tuvali.common.advertisementPayload.AdvertisementPayload
+import foundation.openwallet.tuvali.common.events.EventEmitter
+import foundation.openwallet.tuvali.cryptography.SecretsTranslator
+import foundation.openwallet.tuvali.cryptography.VerifierCryptoBox
+import foundation.openwallet.tuvali.cryptography.VerifierCryptoBoxBuilder
+import foundation.openwallet.tuvali.exception.BLEException
+import foundation.openwallet.tuvali.common.events.DataReceivedEvent
+import foundation.openwallet.tuvali.common.events.ConnectedEvent
+import foundation.openwallet.tuvali.common.events.DisconnectedEvent
+import foundation.openwallet.tuvali.common.events.SecureChannelEstablishedEvent
+import foundation.openwallet.tuvali.transfer.ByteCount.FourBytes
+import foundation.openwallet.tuvali.transfer.TransferReportRequest
+import foundation.openwallet.tuvali.transfer.Util
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.verifier.exception.UnsupportedMTUSizeException
+import foundation.openwallet.tuvali.verifier.exception.VerifierException
+import foundation.openwallet.tuvali.verifier.transfer.ITransferListener
+import foundation.openwallet.tuvali.verifier.transfer.TransferHandler
+import foundation.openwallet.tuvali.verifier.transfer.message.RemoteRequestedTransferReportMessage
+import foundation.openwallet.tuvali.verifier.transfer.message.ResponseChunkReceivedMessage
+import foundation.openwallet.tuvali.verifier.transfer.message.ResponseSizeReadSuccessMessage
 import org.bouncycastle.util.encoders.Hex
 import java.security.SecureRandom
 import java.util.*
@@ -97,10 +97,10 @@ class VerifierBleCommunicator(
   fun notifyVerificationStatus(accepted: Boolean) {
     if (accepted) {
       peripheral.sendData(SERVICE_UUID, GattService.VERIFICATION_STATUS_CHAR_UUID,
-        byteArrayOf(io.mosip.tuvali.wallet.transfer.TransferHandler.VerificationStates.ACCEPTED.ordinal.toByte()))
+        byteArrayOf(foundation.openwallet.tuvali.wallet.transfer.TransferHandler.VerificationStates.ACCEPTED.ordinal.toByte()))
     } else {
       peripheral.sendData(SERVICE_UUID, GattService.VERIFICATION_STATUS_CHAR_UUID,
-        byteArrayOf(io.mosip.tuvali.wallet.transfer.TransferHandler.VerificationStates.REJECTED.ordinal.toByte()))
+        byteArrayOf(foundation.openwallet.tuvali.wallet.transfer.TransferHandler.VerificationStates.REJECTED.ordinal.toByte()))
     }
   }
 

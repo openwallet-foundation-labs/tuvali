@@ -1,4 +1,4 @@
-package io.mosip.tuvali.exception
+package foundation.openwallet.tuvali.exception
 
 open class BLEException(
   message: String,

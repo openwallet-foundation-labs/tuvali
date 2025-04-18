@@ -1,6 +1,6 @@
-package io.mosip.tuvali.common.events
+package foundation.openwallet.tuvali.common.events
 
-import io.mosip.tuvali.exception.ErrorCode
+import foundation.openwallet.tuvali.exception.ErrorCode
 
 class EventEmitter {
   private var listeners = mutableListOf<((Event) -> Unit)>()

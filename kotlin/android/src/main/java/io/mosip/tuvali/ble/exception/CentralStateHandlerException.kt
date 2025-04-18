@@ -1,7 +1,7 @@
-package io.mosip.tuvali.ble.exception
+package foundation.openwallet.tuvali.ble.exception
 
-import io.mosip.tuvali.exception.BLEException
-import io.mosip.tuvali.exception.ErrorCode
+import foundation.openwallet.tuvali.exception.BLEException
+import foundation.openwallet.tuvali.exception.ErrorCode
 
 class CentralStateHandlerException(message: String, cause: Exception): BLEException(message, cause,
   ErrorCode.CentralStateHandlerException

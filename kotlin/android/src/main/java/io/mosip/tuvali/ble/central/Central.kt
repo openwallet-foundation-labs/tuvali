@@ -1,13 +1,13 @@
-package io.mosip.tuvali.ble.central
+package foundation.openwallet.tuvali.ble.central
 
 import android.bluetooth.BluetoothDevice
 import android.content.Context
 import android.os.HandlerThread
 import android.os.Process
-import io.mosip.tuvali.ble.central.impl.Controller
-import io.mosip.tuvali.ble.central.state.IMessageSender
-import io.mosip.tuvali.ble.central.state.StateHandler
-import io.mosip.tuvali.ble.central.state.message.*
+import foundation.openwallet.tuvali.ble.central.impl.Controller
+import foundation.openwallet.tuvali.ble.central.state.IMessageSender
+import foundation.openwallet.tuvali.ble.central.state.StateHandler
+import foundation.openwallet.tuvali.ble.central.state.message.*
 import java.util.*
 
 class Central(context: Context, centralLister: ICentralListener) {

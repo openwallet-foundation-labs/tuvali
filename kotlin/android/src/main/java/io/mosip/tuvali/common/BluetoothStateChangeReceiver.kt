@@ -1,4 +1,4 @@
-package io.mosip.tuvali.common
+package foundation.openwallet.tuvali.common
 
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice
@@ -6,7 +6,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.util.Log
-import io.mosip.tuvali.transfer.Util
+import foundation.openwallet.tuvali.transfer.Util
 import kotlin.reflect.KFunction2
 
 

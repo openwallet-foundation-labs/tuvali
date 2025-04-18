@@ -1,15 +1,15 @@
-package io.mosip.tuvali.wallet
+package foundation.openwallet.tuvali.wallet
 
 import android.content.Context
 import android.util.Log
-import io.mosip.tuvali.common.events.DisconnectedEvent
-import io.mosip.tuvali.common.events.Event
-import io.mosip.tuvali.common.events.EventEmitter
-import io.mosip.tuvali.common.safeExecute.TryExecuteSync
-import io.mosip.tuvali.common.uri.OpenId4vpURI
-import io.mosip.tuvali.exception.handlers.ExceptionHandler
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
-import io.mosip.tuvali.wallet.exception.InvalidURIException
+import foundation.openwallet.tuvali.common.events.DisconnectedEvent
+import foundation.openwallet.tuvali.common.events.Event
+import foundation.openwallet.tuvali.common.events.EventEmitter
+import foundation.openwallet.tuvali.common.safeExecute.TryExecuteSync
+import foundation.openwallet.tuvali.common.uri.OpenId4vpURI
+import foundation.openwallet.tuvali.exception.handlers.ExceptionHandler
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.wallet.exception.InvalidURIException
 
 class Wallet(private val context: Context) : IWallet {
   private val logTag = getLogTag(javaClass.simpleName)

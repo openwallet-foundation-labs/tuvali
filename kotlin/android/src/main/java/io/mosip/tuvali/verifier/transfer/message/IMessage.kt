@@ -1,4 +1,4 @@
-package io.mosip.tuvali.verifier.transfer.message
+package foundation.openwallet.tuvali.verifier.transfer.message
 
 abstract class IMessage(val msgType: TransferMessageTypes) {
   enum class TransferMessageTypes {

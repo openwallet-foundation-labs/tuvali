@@ -1,8 +1,8 @@
-package io.mosip.tuvali.transfer
+package foundation.openwallet.tuvali.transfer
 
-import io.mosip.tuvali.common.version.VersionDetails
-import io.mosip.tuvali.transfer.ByteCount.FourBytes
-import io.mosip.tuvali.transfer.ByteCount.TwoBytes
+import foundation.openwallet.tuvali.common.version.VersionDetails
+import foundation.openwallet.tuvali.transfer.ByteCount.FourBytes
+import foundation.openwallet.tuvali.transfer.ByteCount.TwoBytes
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import org.bouncycastle.util.encoders.Hex

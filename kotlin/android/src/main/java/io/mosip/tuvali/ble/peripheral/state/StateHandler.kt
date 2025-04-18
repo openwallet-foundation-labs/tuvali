@@ -1,15 +1,15 @@
-package io.mosip.tuvali.ble.peripheral.state
+package foundation.openwallet.tuvali.ble.peripheral.state
 
 import android.bluetooth.BluetoothGatt
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
 import android.util.Log
-import io.mosip.tuvali.ble.peripheral.IPeripheralListener
-import io.mosip.tuvali.ble.peripheral.impl.Controller
-import io.mosip.tuvali.ble.peripheral.state.message.*
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
-import io.mosip.tuvali.ble.exception.PeripheralStateHandlerException
+import foundation.openwallet.tuvali.ble.peripheral.IPeripheralListener
+import foundation.openwallet.tuvali.ble.peripheral.impl.Controller
+import foundation.openwallet.tuvali.ble.peripheral.state.message.*
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.ble.exception.PeripheralStateHandlerException
 
 class StateHandler(
   looper: Looper,

@@ -1,15 +1,15 @@
-package io.mosip.tuvali.verifier
+package foundation.openwallet.tuvali.verifier
 
 import android.content.Context
 import android.util.Log
-import io.mosip.tuvali.common.events.DisconnectedEvent
-import io.mosip.tuvali.common.events.Event
-import io.mosip.tuvali.common.events.EventEmitter
-import io.mosip.tuvali.common.events.VerificationStatusEvent
-import io.mosip.tuvali.common.safeExecute.TryExecuteSync
-import io.mosip.tuvali.common.uri.OpenId4vpURI
-import io.mosip.tuvali.exception.handlers.ExceptionHandler
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.common.events.DisconnectedEvent
+import foundation.openwallet.tuvali.common.events.Event
+import foundation.openwallet.tuvali.common.events.EventEmitter
+import foundation.openwallet.tuvali.common.events.VerificationStatusEvent
+import foundation.openwallet.tuvali.common.safeExecute.TryExecuteSync
+import foundation.openwallet.tuvali.common.uri.OpenId4vpURI
+import foundation.openwallet.tuvali.exception.handlers.ExceptionHandler
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
 import org.bouncycastle.util.encoders.Hex
 
 class Verifier(private val context: Context): IVerifier {

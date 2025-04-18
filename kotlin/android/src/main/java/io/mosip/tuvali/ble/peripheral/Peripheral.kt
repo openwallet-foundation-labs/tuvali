@@ -1,18 +1,18 @@
-package io.mosip.tuvali.ble.peripheral
+package foundation.openwallet.tuvali.ble.peripheral
 
 import android.bluetooth.BluetoothGattService
 import android.content.Context
 import android.os.HandlerThread
 import android.os.Process
 import android.util.Log
-import io.mosip.tuvali.ble.peripheral.impl.Controller
-import io.mosip.tuvali.ble.peripheral.state.IMessageSender
-import io.mosip.tuvali.ble.peripheral.state.StateHandler
-import io.mosip.tuvali.ble.peripheral.state.message.*
-import io.mosip.tuvali.verifier.GattService
-import io.mosip.tuvali.verifier.VerifierBleCommunicator
+import foundation.openwallet.tuvali.ble.peripheral.impl.Controller
+import foundation.openwallet.tuvali.ble.peripheral.state.IMessageSender
+import foundation.openwallet.tuvali.ble.peripheral.state.StateHandler
+import foundation.openwallet.tuvali.ble.peripheral.state.message.*
+import foundation.openwallet.tuvali.verifier.GattService
+import foundation.openwallet.tuvali.verifier.VerifierBleCommunicator
 import java.util.*
-import io.mosip.tuvali.transfer.Util.Companion.getLogTag
+import foundation.openwallet.tuvali.transfer.Util.Companion.getLogTag
 
 class Peripheral(context: Context, peripheralListener: IPeripheralListener) {
   private val logTag = getLogTag(javaClass.simpleName)
